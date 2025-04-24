@@ -78,3 +78,27 @@ LDA performs best for both 2-class and 3-class problems.
 CSP is effective for extracting discriminative features from EEG.
 
 3-class classification is harder due to the added complexity of rest condition.
+
+
+Key Findings
+LDA performs best for both 2-class and 3-class problems.
+
+CSP is effective for extracting discriminative features from EEG.
+
+3-class classification is harder due to the added complexity of rest condition.
+
+How to Run the Code
+Install dependencies:
+
+bash
+pip install mne numpy matplotlib scikit-learn pandas
+
+Download the dataset (automatically done in the script):
+
+python
+from mne.datasets import eegbci
+eegbci.load_data(subjects=[1], runs=[4, 8, 12], path='./data')
+Run the script:
+
+bash
+python eeg_motor_movement_imagery_dataset.py
